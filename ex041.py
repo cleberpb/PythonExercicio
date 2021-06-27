@@ -7,7 +7,7 @@ print('-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
 
 print('Categoria de acordo com a idade')
 
-nascimento = int(input('Em que ano você nasceu? '))
+nascimento = int(input('\nEm que ano você nasceu? '))
 ano_atual = datetime.date.today().year
 idade = ano_atual - nascimento
 
