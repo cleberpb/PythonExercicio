@@ -1,3 +1,7 @@
+'''
+Faça um programa que leia um anno qualquer e mostre se ele é BISSEXTO.
+'''
+
 from datetime import date
 
 ano = int(input('Digite uma ano para ver se ele é Bissexto, ou 0 para ano atual: '))
