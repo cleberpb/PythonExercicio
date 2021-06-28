@@ -12,9 +12,19 @@ print('Vamos saber o seu IMC - Índice de Massa Corpórea')
 peso = float(input('Digite o seu peso: '))
 altura = float(input('Digite a sua altura: '))
 imc = peso/(altura**2)
-print(imc)
 
 if imc <= 18.5:
-    print('Seu peso é {:.2f}kg e seu IMC é {:.2f}. Você está abixo do peso.'.format(peso, imc))
-elif imc >=18.6 and <=25:
-    print('')
+    print('Seu peso é {:.2f}kg, sua altura é {:.2f} m.'.format(peso, altura))
+    print('Seu IMC é de {:.2f}. Você está abaixo do peso.'.format(imc))
+elif imc >= 18.6 and imc <= 25:
+    print('Seu peso é {:.2f}kg, sua altura é {:.2f} m.'.format(peso, altura))
+    print('Seu IMC é de {:.2f}. Você está com o pesos ideal.'.format(imc))
+elif imc >= 25.1 and imc <= 30:
+    print('Seu peso é {:.2f}kg, sua altura é {:.2f} m.'.format(peso, altura))
+    print('Seu IMC é de {:.2f}. Você com sobrepeso.'.format(imc))
+elif imc >= 30.1 and imc <= 40:
+    print('Seu peso é {:.2f}kg, sua altura é {:.2f} m.'.format(peso, altura))
+    print('Seu IMC é de {:.2f}. Você está com obsidade.'.format(imc))
+else:
+    print('Seu peso é {:.2f}kg, sua altura é {:.2f} m.'.format(peso, altura))
+    print('Seu IMC é de {:.2f}. Você está com obsidade mórbida.'.format(imc))
