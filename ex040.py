@@ -7,13 +7,6 @@ média atingida:
 - Média 7.0 ou supoerior: APROVADO
 '''
 
-'''
-Crie um programa que leia duas notas de um aluno e calcule sua média
-, mostrando uma mensagem no final, de acordo com a média atiginda.
-- Média abaixo de 5.0: REPROVADO
-- Média antre 4.9 e 6.9: RECUPERAÇÃO
-- Média 7.0 ou superior: APROVADO
-'''
 
 nota01 = float(input('Digite a primeira nota: '))
 nota02 = float(input('Digite a segunda nota: '))
