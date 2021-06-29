@@ -3,6 +3,7 @@ Crie um programa que faça o computador jogar Jokenpô com você.
 - Pedra, papel e tesoura.
 '''
 import random
+import time
 
 
 print('\nVamos jogar JOKENPÔ - Pedra, papel e tesoura')
@@ -12,10 +13,13 @@ print('''-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 0 - PEDRA
 1 - PAPEL
 2 - TESOURA ''')
+
 numero = int(input('Escolha um número para jogar: '))
 lista = (['PEDRA', 'PAPEL', 'TESOURA'])
 jogar = random.choice([0, 1, 2])
 valendo = jogar
+print('Pensando...\n')
+time.sleep(2)
 
 if valendo == 0 and numero == 1:
     print('Computador escolheu PEDRA, você PAPEL.')
