@@ -45,4 +45,5 @@ elif valendo == numero:
     print('NINGUÉM GANHOU! Jogada empatada.')
 
 else:
-    print('Opção inválida. Tente novamente.')
+    print('Opção inválida. Escolha um número de 0 a 2 .')
+    print('Tente novamente')
