@@ -18,27 +18,27 @@ jogar = random.choice([0, 1, 2])
 valendo = jogar
 
 if valendo == 0 and numero == 1:
-    print('Computador escolheu Pedra, você Papel.')
-    print('VOCÊ GANHOU! Papel cobri pedra.')
+    print('Computador escolheu PEDRA, você PAPEL.')
+    print('VOCÊ GANHOU! PAPEL cobri PEDRA.')
 
 elif valendo == 1 and numero == 0:
-    print('Computador Escolheu Papel, você Pedra.')
+    print('Computador Escolheu PAPEL, você PEDRA.')
     print('VOCÊ PERDEU! Papel cobri pedra')
 
 elif valendo == 1 and numero == 2:
-    print('Compuatdor escoleu Papel, você Tesoura.')
+    print('Compuatdor escoleu PAPEL, você TESOURA.')
     print('VOCÊ GANHOU! Tesoura corta papel.')
 
 elif valendo == 2 and numero == 1:
-    print('Computador escolheu Tesoura, você Papel.')
+    print('Computador escolheu TESOURA, você PAPEL.')
     print('VOCÊ PERDEU! Tesoura corta papel.')
 
 elif valendo == 0 and numero == 2:
-    print('Compuatdor escolheu Pedra, você Tesoura.')
+    print('Compuatdor escolheu PEDRA, você TESOURA.')
     print('VOCÊ PERDEU! Pedra quebra tesoura.')
 
 elif valendo == 2 and numero == 0:
-    print('Computador escolheu Tesoura, você Pedra.')
+    print('Computador escolheu TESOURA, você PEDRA.')
     print('VOCÊ GANHOU! Pedra quebra tesoura.')
 
 elif valendo == numero:
