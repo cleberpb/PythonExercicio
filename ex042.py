@@ -16,5 +16,11 @@ terceiro = float(input('Digite o terceiro número: '))
 
 if primeiro < segundo + terceiro and segundo < primeiro + terceiro and terceiro < primeiro + segundo:
     print('Os seguimentos acima PODEM FORMAR triângulo!')
+    if primeiro == segundo and primeiro == terceiro and segundo == terceiro:
+        print('Esse triângulo tem todos os lados iguas, ele é Equilátero')
+    elif primeiro != segundo and primeiro != terceiro and segundo != terceiro:
+        print('Esse trinângulo tem todos os lados diferentes, ele é Escaleno')
+    elif True:
+        print('Esse triângulo tem dois lados iguais, ele é Isósceles')
 else:
     print('Os segmentos acima NÂO PODEM FORMAR triângulo!')
