@@ -13,10 +13,10 @@ print('\nVamos jogar JOKENPÔ - Pedra, papel e tesoura')
 print('''-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
             FAÇA A SUA ESCOLHA
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-print('''Suas opções:
 [ 0 ] PEDRA
 [ 1 ] PAPEL
 [ 2 ] TESOURA''')
+
 jogador = int(input('Qual é a sua jogada? '))
 
 if jogador >= 3:
