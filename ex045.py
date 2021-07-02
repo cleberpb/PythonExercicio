@@ -14,6 +14,54 @@ print('''-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 1 - PAPEL
 2 - TESOURA ''')
 
+from random import randint
+
+
+itens = ('Pedra', 'Papel', 'Tesoura')
+computador = randint(0, 2)
+print('''Suas opções:
+[ 0 ] PEDRA
+[ 1 ] PAPEL
+[ 2 ] TESOURA''')
+jogador = int(input('Qual é a sua jogada? '))
+
+if jogador >= 3:
+    print('Opção inválida. Tente nbovamente.')
+
+else:
+    print('-='*11)
+    print('Computador jogou {}'.format(itens[computador]))
+    print('Jogador jogou {}'.format(itens[jogador]))
+    print('-='*11)
+    
+    
+    if computador == 0:
+        if jogador == 0:
+            print('JOGO EMPATADO.')
+        elif jogador == 1:
+            print('VOCÊ GANHOU!')
+        elif jogador == 2:
+            print('VOCÊ PERDEU.')
+    
+    if computador == 1:
+        if jogador == 0:
+            print('VOCÊ PERDEU.')
+        elif jogador == 1:
+            print('JOGO EMPATADO.')
+        elif jogador == 2:
+            print('VOCÊ GANHOU!')
+    
+    if computador == 2:
+        if jogador == 0:
+            print('VOCÊ GANHOU!')
+        elif jogador == 1:
+            print('VOCÊ PERDEU')
+        elif jogador == 2:
+            print('JOGO EMPATADO')
+
+'''
+Eu tinha feiro desta forma. A do Professor ficou com maismais logica.
+
 numero = int(input('Escolha um número para jogar: '))
 lista = (['PEDRA', 'PAPEL', 'TESOURA'])
 jogar = random.choice([0, 1, 2])
@@ -50,4 +98,4 @@ elif valendo == numero:
 
 else:
     print('Opção inválida. Escolha um número de 0 a 2 .')
-    print('Tente novamente')
+    print('Tente novamente')'''
