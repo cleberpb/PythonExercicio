@@ -29,6 +29,8 @@ if jogador >= 3:
     print('Opção inválida. Tente nbovamente.')
 
 else:
+    print('Pensando...')
+    time.sleep(2)
     print('-='*11)
     print('Computador jogou {}'.format(itens[computador]))
     print('Jogador jogou {}'.format(itens[jogador]))
