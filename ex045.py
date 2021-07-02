@@ -2,23 +2,17 @@
 Crie um programa que faça o computador jogar Jokenpô com você.
 - Pedra, papel e tesoura.
 '''
-import random
+from random import randint
 import time
 
+
+itens = ('Pedra', 'Papel', 'Tesoura')
+computador = randint(0, 2)
 
 print('\nVamos jogar JOKENPÔ - Pedra, papel e tesoura')
 print('''-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
             FAÇA A SUA ESCOLHA
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-0 - PEDRA
-1 - PAPEL
-2 - TESOURA ''')
-
-from random import randint
-
-
-itens = ('Pedra', 'Papel', 'Tesoura')
-computador = randint(0, 2)
 print('''Suas opções:
 [ 0 ] PEDRA
 [ 1 ] PAPEL
