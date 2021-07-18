@@ -56,7 +56,7 @@ else:
             print('JOGO EMPATADO')
 
 '''
-Eu tinha feiro desta forma. A do Professor ficou com mais logica.
+Eu tinha feito desta forma. A do Professor ficou com mais logica.
 
 numero = int(input('Escolha um número para jogar: '))
 lista = (['PEDRA', 'PAPEL', 'TESOURA'])
