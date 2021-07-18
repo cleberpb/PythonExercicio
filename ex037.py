@@ -4,14 +4,14 @@ a base de conversão:
 '''
 
 print('CONVERSÃO DE NÚMEROS INTEIRO')
-print('*****************************************')
+print('*'*42)
 numero = int(input('Digite um número inteiro: '))
 
-print('------------------------------------------')
+print('-'*42)
 print('Opções para conversão:')
 print('1 - Binário | 2 - Octal | 3 - Hexadecimal')
 opcao = int(input('Escolha uma opçãp: '))
-print('------------------------------------------')
+print('-'*42)
 
 '''
 Eu fiz este pedaço de código - está funcionando
@@ -29,7 +29,7 @@ else:
     print('\nOpção inválida! Tente novamente.')'''
 
 if opcao == 1:
-    print('{} convertido para BINÁRIO é igual a {}.'.format(numero, bin(numero)[2:]))
+    print('{numero, bin} convertido para BINÁRIO é igual a {}.'.format((numero)[2:]))
 elif opcao == 2:
     print('{} convertido para OCTAL é igual a {}.'.format(numero, oct(numero)[2:]))
 elif opcao == 3:
