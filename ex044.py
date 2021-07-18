@@ -23,20 +23,20 @@ cartao_2x = valor_compra - (valor_compra * 5 / 100)
 cartao_3x_mais = valor_compra + (valor_compra * 20 / 100)
 
 if opcao == 1:
-    print('O Valor da compra é de R${:.2f}.'.format(valor_compra))
-    print('Á vista no dinheiro/cheque, você tem 10% desconto. Valor a pagar R${}.'.format(dineiro_cheque))
+    print(f'O Valor da compra é de R${valor_compra:.2f}.')
+    print(f'Á vista no dinheiro/cheque, você tem 10% desconto. Valor a pagar R${dineiro_cheque}.')
 
 elif opcao == 2:
-    print('O Valor da compra é de R${:.2f}.'.format(valor_compra))
-    print('Á vista no cartão, você terá 5% de desconto. Valor apagar é R${}.'.format(cartao_2x))
+    print(f'O Valor da compra é de R${valor_compra:.2f}.')
+    print(f'Á vista no cartão, você terá 5% de desconto. Valor apagar é R${cartao_2x}.')
 
 elif opcao == 3:
-    print('O Valor da compra é de R${:.2f}.'.format(valor_compra))
+    print(f'O Valor da compra é de R${valor_compra:.2f}.')
     print('Em até 2x no cartão, você paga o preço normal.')
 
 elif opcao ==4:
-    print('O Valor da compra é de R${:.2f}.'.format(valor_compra))
-    print('Em 3x ou mais no cartão, você terá 20% de juros. Valor apagar é R${}.'.format(cartao_3x_mais))
+    print(f'O Valor da compra é de R${valor_compra:.2f}.')
+    print(f'Em 3x ou mais no cartão, você terá 20% de juros. Valor apagar é R${cartao_3x_mais}.')
 
 else:
     print('Escolha uma opção válida.')
