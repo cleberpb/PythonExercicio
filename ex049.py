@@ -11,4 +11,4 @@ numero = int(input('Digite um número para a tabuada: '))
 print(f'Segue abaixo a tabuada de {numero}.\n')
 for tabuada in range(1, 11):
     resultado = numero * tabuada
-    print('{} x {} = {}'.format(tabuada, numero, resultado))
+    print('{} x {} = {}'.format(numero, tabuada, resultado))
