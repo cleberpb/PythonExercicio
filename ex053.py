@@ -20,8 +20,8 @@ print(f'Você escreveu a frase {frase}.')
 inverter = juntar[::-1]
 
 if juntar == inverter:
-    print(f'Está frase lendo de trás para frete fica: {inverter}.')
+    print(f'Está frase lendo de trás para frete fica do mesmo jeito.')
     print('Ela é um Políndromo.')
 else:
-    print(f'Está frase lendo de trás para frente fica: {inverter}.')
+    print(f'Está frase lendo de trás para frente fica muito doida.')
     print('Ela NÃO é um políndromo. ')
