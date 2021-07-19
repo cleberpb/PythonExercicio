@@ -14,14 +14,14 @@ print('-='*25)
 print('''Escreva uma frase, e veja se ela pode ser lida 
 de trás para ferente. OBS: deve ser sem acento.''')
 print('-='*25)
-frase = input('\nEscreva a frase: ').lower()
+frase = input('\nEscreva uma frase: \n').lower()
 juntar = ''.join(frase.split())
-print(f'Você escreveu a frase {frase}.')
+print(f'Você escreveu a frase {frase}.\n')
 inverter = juntar[::-1]
 
 if juntar == inverter:
-    print(f'Está frase lendo de trás para frete fica do mesmo jeito.')
+    print(f'Está frase lida de trás para frete fica do mesmo jeito.')
     print('Ela é um Políndromo.')
 else:
-    print(f'Está frase lendo de trás para frente fica muito doida.')
+    print(f'Está frase lida de trás para frente fica muito doida.')
     print('Ela NÃO é um políndromo. ')
