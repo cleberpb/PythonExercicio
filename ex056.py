@@ -11,11 +11,15 @@ mais_velho = 0
 menoridade = 0
 
 for pessoas in range(1, 5):
-    nome = input('Qual é o seu nome? ')
+ #   nome = input('Qual é o seu nome? ')
     idade = int(input('Quantos anos você tem? '))
-    sexo = input('Sexo: M ou F? ')
+  #  sexo = input('Sexo: M ou F? ')
     media_idade = media_idade + idade
+    if idade >= mais_velho:
+        idade = mais_velho + idade
+        
+    else:
+        idade = idade
     
 print(media_idade / 4)
-
-
+print(mais_velho)

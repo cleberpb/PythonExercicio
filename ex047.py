@@ -4,5 +4,5 @@ pares que estão no intervalo entre 1 e 50.
 '''
 
 print('Números pares entre 1 e 50.')
-for numeros in range(0, 50, 2):
-    print(numeros)
+for numeros in range(0, 51, 2):
+    print(numeros, end=' ') # (numero, end=' ') a impressão fica um do lado do outro, com ' ' espaços.
