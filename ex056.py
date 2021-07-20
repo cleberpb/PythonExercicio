@@ -7,7 +7,7 @@ Desenvolva um programa que leia o nome, idade e sexo de
 '''
 
 media = 0
-menor = 0
+menor = 1
 mulher = 0
 
 for pessoas in range(1, 5):
