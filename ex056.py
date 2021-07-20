@@ -6,21 +6,29 @@ Desenvolva um programa que leia o nome, idade e sexo de
 - Quantas mulheres têm menos de 20 anos.
 '''
 
-media = 0
-menor = 1
-mulher = 0
+soma_idade = 0
+media_idade = 0
+maior_idade_homem = 0
+nome_do_velho = ''
+total_mulher20 = 0
 
-for pessoas in range(1, 5):
-    nome = str(input('Digite seu nome: '))
-    idade = int(input('Qual é sua idade: '))
-    sexo = str(input('Sexo: Homem/Mulher: ')).lower()
-    print('\n')
+for pessoa in range(1, 5):
+    print(f'-------- {pessoa}ª PESSOA --------')
+    nome = str(input('NOME: ')).strip()
+    idade = int(input('IDADE: '))
+    sexo = str(input('SEXO [ M/F ]: ')).strip()
+    soma_idade += idade
 
-    media = media + idade
-    if sexo == mulher:
-        sexo = mulher
-    if mulher <= 19 :
-        mulher = menor + 1
+    if pessoa == 1 and sexo in 'Mm':
+        maior_idade_homem = idade
+        nome_do_velho = nome
+    if sexo in 'Mm' and idade > maior_idade_homem:
+        maior_idade_homem = idade
+        nome_do_velho = nome
+    if sexo in 'Ff' and idade < 20:
+        total_mulher20 += 1
+media_idade = soma_idade / 4
 
-print(f'A média de idade do grupo de pessoas é de {media / 4}')
-print(f'{mulher} mulheres tem menos de 20 anos.')
+print(f'A média de idade do grupo é de {media_idade}.')
+print(f'O homem mais velho tem {maior_idade_homem} idade e se chama {nome_do_velho}.')
+print(f'Ao todos são {total_mulher20} mulher(es) com menos de 20 anos.')
