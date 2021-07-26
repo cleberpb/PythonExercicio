@@ -10,7 +10,8 @@ sexo = ''
 
 while sexo != m and sexo != f:
     sexo = str(input('\nDigite o sexo [ M / F ]: ')).lower()
-    print('O sexo deve ser M ou F. Digite novamente.')
+    if sexo != m and sexo != f:
+        print('O sexo deve ser M ou F. Digite novamente.')
     print('-='*21)
     
 print(f'O sexo digitado foi {sexo.upper()}.\n')

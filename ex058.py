@@ -14,11 +14,10 @@ print('*************************************************************************
 
 contador = 0
 numero_chutado = 0
-computaddor = computaddor = random.choice([1,2,3,4,5,6,7,8,9,10])
+computaddor = ''
 
-
-while numero_chutado != computaddor :
-        
+while numero_chutado != computaddor:
+    computaddor = random.choice([1,2,3,4,5,6,7,8,9,10])    
     numero_chutado = int(input('Chute um número de 1 a 10: '))
     print(f'ERROU! Eu pensei {computaddor} e você chutou o número {numero_chutado}.')
     print('------------ Chute outro número ------------\n')
