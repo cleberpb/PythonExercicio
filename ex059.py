@@ -35,11 +35,11 @@ while opcao != 5:
 
     if opcao == 1:
         soma = numero1 + numero2
-        print(f'A soma de {numero1} + {numero2}={soma}.')
+        print(f'A soma de {numero1}+{numero2}={soma}.')
         print(divisoria, '\n')
     if opcao == 2:
         multiplcacao = numero1 * numero2
-        print(f'A multiplicação de {numero1} x {numero2}={multiplcacao}')
+        print(f'A multiplicação de {numero1}x{numero2}={multiplcacao}')
         print(divisoria, '\n')
     if opcao == 3:
         if numero1 > numero2:
