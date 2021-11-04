@@ -13,4 +13,4 @@ while numero >= 1 :
     fatorial = math.factorial(numero)
     print(f'O fatorial de {numero} é {fatorial}.')
     print('-='*15)    
-print('Você saiu do programa')
+print('\nVocê saiu do programa\n')
