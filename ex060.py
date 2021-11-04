@@ -7,8 +7,8 @@ Ex:
 import math
 
 
-numero = 0
-while numero >= 0 :
+numero = 1
+while numero >= 1 :
     numero = int(input('\nDigite um número inteiro: '))
     fatorial = math.factorial(numero)
     print(f'O fatorial de {numero} é {fatorial}.')
